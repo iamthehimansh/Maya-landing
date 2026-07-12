@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Maya — the local-first AI OS for developers">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0d0e11"/>
+      <stop offset="1" stop-color="#08090b"/>
+    </linearGradient>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5ad1e0"/>
+      <stop offset=".6" stop-color="#f5b849"/>
+      <stop offset="1" stop-color="#ffd98a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.05" r="0.85">
+      <stop offset="0" stop-color="#f5b849" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#f5b849" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0 L0 0 0 48" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- logo mark -->
+  <g transform="translate(96 108)">
+    <rect width="96" height="96" rx="22" fill="#101216" stroke="url(#grad)" stroke-opacity="0.55" stroke-width="2"/>
+    <path d="M20 68 L20 32 L40 54 L48 32 L56 54 L76 32 L76 68"
+          fill="none" stroke="url(#grad)" stroke-width="8"
+          stroke-linecap="round" stroke-linejoin="round" transform="scale(0.86) translate(8 6)"/>
+    <rect x="66" y="24" width="11" height="11" rx="2.4" fill="#f5b849"/>
+  </g>
+
+  <text x="212" y="176" font-family="Inter, Segoe UI, sans-serif" font-size="40" font-weight="800" fill="#f2f3f5">Maya</text>
+
+  <!-- headline -->
+  <text x="96" y="330" font-family="Inter, Segoe UI, sans-serif" font-size="76" font-weight="800" fill="#f4f4f6" letter-spacing="-2">The local-first AI OS</text>
+  <text x="96" y="418" font-family="Inter, Segoe UI, sans-serif" font-size="76" font-weight="800" letter-spacing="-2">
+    <tspan fill="#f4f4f6">for </tspan><tspan fill="url(#grad)">developers.</tspan>
+  </text>
+
+  <!-- subline -->
+  <text x="98" y="486" font-family="Inter, Segoe UI, sans-serif" font-size="30" font-weight="400" fill="#a4a9b4">Local models, agent teams &amp; a coding agent — on your own Mac.</text>
+
+  <!-- commands -->
+  <g font-family="JetBrains Mono, ui-monospace, monospace" font-size="26">
+    <rect x="96" y="524" width="470" height="58" rx="12" fill="#121419" stroke="#24262e"/>
+    <text x="120" y="561" fill="#5ad1e0">$ <tspan fill="#f2f3f5">npm i -g maya-os</tspan></text>
+    <rect x="586" y="524" width="518" height="58" rx="12" fill="#121419" stroke="#24262e"/>
+    <text x="610" y="561" fill="#5ad1e0">$ <tspan fill="#f2f3f5">npm i -g @maya-os/code</tspan></text>
+  </g>
+</svg>
