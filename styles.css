@@ -480,3 +480,26 @@ h3 { font-size: 1.18rem; letter-spacing: -0.01em; }
 .t-pink  { color: #ff9ec4; }
 .t-white { color: #f2f3f5; }
 .t-red   { color: #ff6b6b; }
+
+/* ------------------------------------------------- page fixes / docs --- */
+/* .copy-cmd has min-width:300px — keep it from overflowing narrow screens. */
+.copy-cmd { max-width: 100%; flex-wrap: wrap; }
+.copy-cmd code { overflow-x: auto; max-width: 100%; }
+@media (max-width: 520px) { .copy-cmd { min-width: 0; } }
+
+/* Docs page rhythm (standalone h1/h2 inside .product). */
+.product h1 { margin-bottom: 12px; }
+.product h2 { margin: 52px 0 18px; font-size: 1.3rem; }
+.product > .container > h2:first-of-type { margin-top: 36px; }
+.card h3 .meta { font-family: var(--font-mono); font-size: .76rem; color: var(--text-faint); margin-left: 6px; }
+.card p code, .lead code, .term-caption code {
+  font-family: var(--font-mono); font-size: .85em;
+  background: var(--bg-elev-2); padding: 2px 6px; border-radius: 6px;
+}
+figure.terminal { margin: 0 0 24px; }
+
+/* Slimmer terminal scrollbar when a line does overflow. */
+.term-body { scrollbar-width: thin; }
+.term-body::-webkit-scrollbar { height: 6px; }
+.term-body::-webkit-scrollbar-thumb { background: var(--border); border-radius: 6px; }
+.term-body::-webkit-scrollbar-track { background: transparent; }

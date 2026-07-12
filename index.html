@@ -56,6 +56,7 @@
       <a href="#maya-os">Maya OS</a>
       <a href="#maya-code">maya code</a>
       <a href="#why-local-first">Why local-first</a>
+      <a href="/docs.html">Docs</a>
       <a href="https://github.com/iamthehimansh/Maya-os" rel="noopener">GitHub</a>
     </nav>
 
@@ -84,16 +85,22 @@
 
       <div class="installs">
         <div class="copy-cmd">
-          <code class="cmd">npm i -g maya-os<span class="t-dim">&nbsp;&nbsp;→&nbsp;&nbsp;</span>maya serve</code>
-          <button class="copy-btn" type="button" data-copy="npm i -g maya-os" aria-label="Copy: npm i -g maya-os">Copy</button>
+          <code>npm i -g maya-os</code>
+          <span class="arrow" aria-hidden="true">→</span>
+          <code class="run">maya serve</code>
+          <button class="copy-btn" type="button" data-copy="npm i -g maya-os" aria-label="Copy: npm i -g maya-os">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          </button>
         </div>
-        <p class="t-dim">Boot the OS + dashboard</p>
 
         <div class="copy-cmd">
-          <code class="cmd">npm i -g @maya-os/code<span class="t-dim">&nbsp;&nbsp;→&nbsp;&nbsp;</span>mayac</code>
-          <button class="copy-btn" type="button" data-copy="npm i -g @maya-os/code" aria-label="Copy: npm i -g @maya-os/code">Copy</button>
+          <code>npm i -g @maya-os/code</code>
+          <span class="arrow" aria-hidden="true">→</span>
+          <code class="run">mayac</code>
+          <button class="copy-btn" type="button" data-copy="npm i -g @maya-os/code" aria-label="Copy: npm i -g @maya-os/code">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          </button>
         </div>
-        <p class="t-dim">Launch the coding agent</p>
       </div>
 
       <div class="hero-cta">
@@ -138,16 +145,33 @@
           <h3>Web dashboard</h3>
           <p>Chat with your agent teams and models, browse files and runs — all from a local web UI.</p>
         </article>
-        <article class="card fit reveal">
+        <article class="card reveal">
           <h3>Hardware-aware model recommender</h3>
-          <p>Detects your Mac and ranks local models by fit, quality, and speed — <span class="t-green">perfect</span> / <span class="t-yellow">good</span> / <span class="t-dim">too-tight</span> — so you download the right one the first time.</p>
+          <p>Detects your Mac and ranks local models by fit, quality, and speed — so you download the right one the first time.</p>
+          <div class="recommender-row">
+            <span class="model">qwen2.5-coder-7b</span>
+            <span class="fit perfect">perfect</span>
+            <span class="meta">Q5_K_M</span>
+          </div>
+          <div class="recommender-row">
+            <span class="model">deepseek-coder-lite</span>
+            <span class="fit good">good</span>
+            <span class="meta">Q3_K_M</span>
+          </div>
+          <div class="recommender-row">
+            <span class="model">deepseek-coder-33b</span>
+            <span class="fit tight">too-tight</span>
+            <span class="meta">Q4_K_M</span>
+          </div>
         </article>
       </div>
 
       <div class="hero-cta">
         <div class="copy-cmd">
-          <code class="cmd">npm i -g maya-os</code>
-          <button class="copy-btn" type="button" data-copy="npm i -g maya-os" aria-label="Copy: npm i -g maya-os">Copy</button>
+          <code>npm i -g maya-os</code>
+          <button class="copy-btn" type="button" data-copy="npm i -g maya-os" aria-label="Copy: npm i -g maya-os">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          </button>
         </div>
         <a class="btn btn-ghost" href="https://github.com/iamthehimansh/Maya-os" rel="noopener">Read the docs →</a>
       </div>
@@ -195,8 +219,10 @@
 
       <div class="hero-cta">
         <div class="copy-cmd">
-          <code class="cmd">npm i -g @maya-os/code</code>
-          <button class="copy-btn" type="button" data-copy="npm i -g @maya-os/code" aria-label="Copy: npm i -g @maya-os/code">Copy</button>
+          <code>npm i -g @maya-os/code</code>
+          <button class="copy-btn" type="button" data-copy="npm i -g @maya-os/code" aria-label="Copy: npm i -g @maya-os/code">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          </button>
         </div>
         <a class="btn btn-ghost" href="https://github.com/iamthehimansh/Mayac" rel="noopener">mayac on GitHub →</a>
       </div>
@@ -219,20 +245,20 @@
           </div>
           <pre class="terminal__body term-body"><code><span class="t-dim">$</span> <span class="t-white">maya serve</span>
 
-  <span class="t-violet">Maya OS</span>  <span class="t-dim">▸</span>  local-first AI OS
-  <span class="t-dim">────────────────────────────────────────────────</span>
-  <span class="t-green">✓</span> Detected   <span class="t-white">Apple M2 Pro · 16 GB unified memory</span>
-  <span class="t-green">✓</span> Gateway    <span class="t-cyan">http://127.0.0.1:4100/v1</span>  <span class="t-dim">(OpenAI-compatible)</span>
-  <span class="t-green">✓</span> Dashboard  <span class="t-cyan">http://127.0.0.1:4200</span>
+<span class="t-violet">Maya OS</span> <span class="t-dim">▸</span> local-first AI OS
+<span class="t-dim">──────────────────────────────────────</span>
+<span class="t-green">✓</span> Detected   <span class="t-white">Apple M2 Pro · 16 GB</span>
+<span class="t-green">✓</span> Gateway    <span class="t-cyan">127.0.0.1:4100/v1</span>
+<span class="t-green">✓</span> Dashboard  <span class="t-cyan">127.0.0.1:4200</span>
 
-  <span class="t-yellow">Model recommender — ranked for your Mac</span>
-  <span class="t-dim">────────────────────────────────────────────────</span>
-  <span class="t-green">●</span> perfect     qwen2.5-coder-7b        Q5_K_M   ~30 tok/s
-  <span class="t-yellow">●</span> good        deepseek-coder-v2-lite  Q3_K_M   ~110 tok/s
-  <span class="t-dim">○ too-tight   deepseek-coder-33b      Q4_K_M   ~19 GB</span>
+<span class="t-yellow">Model recommender — for your Mac</span>
+<span class="t-dim">──────────────────────────────────────</span>
+<span class="t-green">●</span> perfect    qwen2.5-coder-7b    <span class="t-dim">Q5_K_M</span>
+<span class="t-yellow">●</span> good       deepseek-coder-lite <span class="t-dim">Q3_K_M</span>
+<span class="t-dim">○ too-tight  deepseek-coder-33b  Q4_K_M</span>
 
-  <span class="t-dim">RAM guardrail: loads capped to keep you safe</span>
-  <span class="t-white">Ready.</span> Point any OpenAI client at <span class="t-cyan">127.0.0.1:4100</span> <span class="t-dim">→</span></code></pre>
+<span class="t-dim">RAM guardrail: loads capped for safety</span>
+<span class="t-white">Ready.</span> <span class="t-dim">Point any OpenAI client here →</span></code></pre>
         </figure>
 
         <figure class="terminal reveal">
@@ -240,18 +266,18 @@
             <span class="term-dots" aria-hidden="true"></span>
             <span class="term-title">zsh — mayac</span>
           </div>
-          <pre class="terminal__body term-body"><code><span class="t-violet">maya code</span> <span class="t-dim">·</span> <span class="t-white">anthropic/claude-opus-4-8</span> <span class="t-dim">·</span> <span class="t-green">sub</span>
+          <pre class="terminal__body term-body"><code><span class="t-violet">maya code</span> <span class="t-dim">·</span> <span class="t-white">claude-opus-4-8</span> <span class="t-dim">·</span> <span class="t-green">sub</span>
 
-<span class="t-cyan">›</span> <span class="t-white">build the landing hero and wire the copy</span>
+<span class="t-cyan">›</span> <span class="t-white">build the landing hero, wire the copy</span>
 
-  <span class="t-green">●</span> read    COPY.md
-  <span class="t-green">●</span> edit    index.html   <span class="t-green">(+42</span> <span class="t-red">−3)</span>
-  <span class="t-green">●</span> bash    python3 -m http.server 8080
-  <span class="t-green">✓</span> agents  design · build · content · deploy
+<span class="t-green">●</span> read    COPY.md
+<span class="t-green">●</span> edit    index.html   <span class="t-green">(+42</span> <span class="t-red">−3)</span>
+<span class="t-green">●</span> bash    python3 -m http.server 8080
+<span class="t-green">✓</span> agents  design · build · content · deploy
 
-  <span class="t-dim">skills · mcp · sub-agents · memory · background</span>
-<span class="t-dim">──────────────────────────────────────────────────</span>
-  <span class="t-dim">⏎ send   ⇥ tools   ^K commands   ^C quit</span></code></pre>
+<span class="t-dim">skills · mcp · sub-agents · memory</span>
+<span class="t-dim">──────────────────────────────────────</span>
+<span class="t-dim">⏎ send   ⇥ tools   ^K cmds   ^C quit</span></code></pre>
         </figure>
       </div>
       <p class="term-caption">Real output shapes from <code>maya serve</code> and the <code>mayac</code> TUI.</p>
@@ -297,12 +323,20 @@
 
         <div class="installs">
           <div class="copy-cmd">
-            <code class="cmd">npm i -g maya-os<span class="t-dim">&nbsp;&nbsp;→&nbsp;&nbsp;</span>maya serve</code>
-            <button class="copy-btn" type="button" data-copy="npm i -g maya-os" aria-label="Copy: npm i -g maya-os">Copy</button>
+            <code>npm i -g maya-os</code>
+            <span class="arrow" aria-hidden="true">→</span>
+            <code class="run">maya serve</code>
+            <button class="copy-btn" type="button" data-copy="npm i -g maya-os" aria-label="Copy: npm i -g maya-os">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            </button>
           </div>
           <div class="copy-cmd">
-            <code class="cmd">npm i -g @maya-os/code<span class="t-dim">&nbsp;&nbsp;→&nbsp;&nbsp;</span>mayac</code>
-            <button class="copy-btn" type="button" data-copy="npm i -g @maya-os/code" aria-label="Copy: npm i -g @maya-os/code">Copy</button>
+            <code>npm i -g @maya-os/code</code>
+            <span class="arrow" aria-hidden="true">→</span>
+            <code class="run">mayac</code>
+            <button class="copy-btn" type="button" data-copy="npm i -g @maya-os/code" aria-label="Copy: npm i -g @maya-os/code">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            </button>
           </div>
         </div>
 
@@ -333,6 +367,7 @@
         <ul>
           <li><a href="https://www.npmjs.com/package/maya-os" rel="noopener">Maya OS</a></li>
           <li><a href="https://www.npmjs.com/package/@maya-os/code" rel="noopener">maya code</a></li>
+          <li><a href="/docs.html">Docs</a></li>
           <li><a href="#why-local-first">Why local-first</a></li>
         </ul>
       </nav>
