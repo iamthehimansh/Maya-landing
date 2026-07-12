@@ -73,3 +73,13 @@ verification) are in **[DEPLOY.md](./DEPLOY.md)**.
 ## License
 
 MIT.
+
+## The Maya OS family
+
+| | What it is | Source | Package |
+|---|---|---|---|
+| **Maya OS** | The platform — gateway, agent teams, orchestrator, dashboard | [Maya-os](https://github.com/iamthehimansh/Maya-os) | [`maya-os`](https://www.npmjs.com/package/maya-os) |
+| **maya code** (`mayac`) | The coding agent — Ink TUI, Anthropic + OpenAI, skills, MCP | [Mayac](https://github.com/iamthehimansh/Mayac) | [`@maya-os/code`](https://www.npmjs.com/package/@maya-os/code) |
+| **Landing page** | The site at [maya.himansh.in](https://maya.himansh.in) | [Maya-landing](https://github.com/iamthehimansh/Maya-landing) | — |
+
+Website: **[maya.himansh.in](https://maya.himansh.in)** · Docs: **[maya.himansh.in/docs](https://maya.himansh.in/docs)**
